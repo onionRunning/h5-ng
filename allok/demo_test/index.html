@@ -1,0 +1,633 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="yes" name="apple-touch-fullscreen" />
+  <meta content="telephone=no,email=no" name="format-detection" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>内购页version</title>
+  <style>
+    
+    body::-webkit-scrollbar {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+    }
+    * {
+        -webkit-touch-callout: none;
+        /*系统默认菜单被禁用*/
+        -webkit-user-select: none;
+        /*webkit浏览器*/
+        -khtml-user-select: none;
+        /*早期浏览器*/
+        -moz-user-select: none;
+        /*火狐*/
+        -ms-user-select: none;
+        /*IE10*/
+        user-select: none;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+
+    
+
+    #Block-0 {
+      background-color: #f2f2f7;
+      display: flex;
+      width: 100%;
+      height: 44px;
+      box-sizing: content-box;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0px 0px 0px 0px;
+      padding-top: 60px;
+      position: fixed;
+      top: 0px;
+      z-index: 100;
+    }
+    
+
+    #Block-0-img-0 {
+      margin: 10px 0px 0px 10px; 
+      padding: 8px;
+      width: 24px;
+      height: 24px;
+      transform: translateY(-8px);
+    }      
+    #Block-0-ph-1 {
+      word-wrap: break-word;
+      line-height: 1.5;
+      font-size: 16px;
+      color: #8e8e93;
+      margin: 10px 16px 0px 0px; 
+      padding: 0px 0px 0px 0px;
+      font-family: SF Pro;
+    }
+      
+  
+
+    #box-container-1 {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      /* padding-top: 16px; */
+      background-color: #f2f2f7;
+      padding-top: 120px;
+      box-sizing: content-box;
+    }
+    #box-img-1 {
+      width: 400%;
+      height: 100%;
+    }
+    .img-area-1 {
+      width: 100vw;
+      height: 150px;
+      float: left;
+      cursor: pointer;
+      background-color: #f2f2f7;
+    }
+    .points-1 {
+      width: 100%;
+      height: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 10px;
+    }
+    .points-1 span {
+      display: inline-block;
+      width: 16px;
+      height: 4px;
+      border-radius: 24px;
+      background-color: #fff;
+      margin-right: 4px;
+    }
+    .points-1 span:first-child {
+      background-color: #9820C5;
+    }
+    .points-1 span:last-child {
+      margin-right: 0;
+    }
+    .imgs-1 {        
+      max-width: 100vw;
+      width: calc(100vw - 32px);
+      height: 100%;
+      max-height: 150px;
+      pointer-events: none;
+      -webkit-touch-callout: none;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  
+
+    #Block-2 {
+      background-color: #f2f2f7;
+      display: block;
+      width: 100%;
+      height: 130px;
+      box-sizing: content-box;
+      flex-wrap: wrap;
+      
+      padding: 0px 0px 0px 0px;
+    }
+    
+
+    #Block-2-ph-0 {
+      word-wrap: break-word;
+      line-height: 1.5;
+      font-size: 20px;
+      color: #1c1c1e;
+      margin: 0px 0px 0px 0px; 
+      padding: 0px 0px 0px 0px;
+      text-align: center;
+      font-weight: 900;
+      
+      padding-top: 10px;
+      font-family: SF Pro;
+    }
+      
+    #Block-2-ph-1 {
+      word-wrap: break-word;
+      line-height: 19px;
+      font-size: 16px;
+      color: #8e8e93;
+      margin: 0px 0px 0px 0px; 
+      padding: 8px 8px 8px 8px;
+      width: calc(100% - 32px);
+      margin: 0 auto;
+      text-align: left;
+      font-family: SF Pro;
+
+    }
+      
+  
+
+    #Block-3 {
+      background-color: #ffffff;
+      display: block;
+      width: 100%;
+      height: 142px;
+      box-sizing: content-box;
+      flex-wrap: wrap;
+      border: 2px solid #9820C5;
+      border-radius: 8px;  
+      padding: 0px 0px 0px 0px;
+      margin:  0 auto;
+      margin-top: 32px;
+      width: calc(100vw - 32px);
+    }
+    
+
+  
+
+    #Block-4 {
+        background-color: #ffffff;
+        display: block;
+        width: 100%;
+        height: 80px;
+        box-sizing: content-box;
+        flex-wrap: wrap;
+        border: 1px solid #9820C5;
+        border-radius: 8px;  
+        padding: 0px 0px 0px 0px;
+        margin:  0 auto;
+        margin-top: 32px;
+        width: calc(100vw - 32px);
+        opacity: 0.5;
+    }
+    
+
+  
+
+    #Block-5 {
+      display: flex;
+      width: 100%;
+      height: auto;
+      box-sizing: content-box;
+      flex-wrap: wrap;      
+      padding: 0px 0px 0px 0px;
+    }
+    
+
+    #Block-5-ph-0 {
+      word-wrap: break-word;
+      line-height: 1.5;
+      font-size: 14px;
+      color: #8E8E93;
+      margin: 0px 0px 0px 0px; 
+      padding: 8px 8px 8px 8px;
+      width: calc(100vw - 32px);
+      text-align: center;
+      margin-top: 8px;
+    }
+      
+  
+
+    #Block-6 {
+      background-color: #9820ff;
+      width: 100%;
+      box-sizing: content-box;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0px 0px 0px 0px;
+      margin:  10px auto;
+      width: calc(100vw - 32px);
+      height: 44px;
+      border-radius: 6px;
+      text-align: center;
+      line-height: 44px;
+      position: fixed;
+      bottom: 20px;
+      left: 16px;
+    }
+    
+
+    #Block-6-ph-0 {
+      word-wrap: break-word;
+      line-height: 44px;
+      font-size: 18px;
+      color: #ffffff;
+      margin: 0px 0px 0px 0px; 
+      padding: 0px 0px 0px 0px;
+    }
+      
+    .Block-3-header {
+        width: calc(100% - 24px);
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #FFFFFF;
+        background: #9820C5;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 8px;
+        font-style: italic;
+        font-family: SF Pro;
+
+    }
+    .content {
+        display: flex;
+        width: 100%;
+        height: calc(100% - 30px);
+        justify-content: space-between;
+    }
+    .content-left {
+        padding-left: 16px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: SF Pro;
+
+    }
+    .content-left-1 {
+        font-size: 28px;
+        color: #2D2D2D;
+        font-weight: 900;
+    }
+    .content-left-2 {
+        background: #DF8BFF;
+        color: #fff;
+        height: 16px;
+        border-radius: 8px;
+        font-size: 12px;
+        margin: 4px 0;
+        padding: 4px;
+        width: 120px;
+        font-weight: 900;
+    }
+    .content-left-3 {
+        color: #929292;
+        font-family: SF Pro;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 508;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        font-weight: 500;
+    }
+    .content-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 16px;
+        font-family: SF Pro;
+
+    }
+    .content-right-1 {
+        font-family: SF Pro;
+        font-size: 16px;
+        font-weight: 1000;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #2D2D2D;
+        font-family: SF Pro;
+
+    }
+    .content-right-2 {
+        font-family: SF Pro;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #929292;
+        font-family: SF Pro;
+
+    }
+    .content2 {
+        display: flex;
+        width: 100%;
+        height: calc(100%);
+        justify-content: space-between;
+        font-family: SF Pro;
+
+    }
+    #bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: SF Pro;
+      margin-bottom: 80px;
+    }
+    #service, #privicy {
+      text-align: center;
+      color: #8E8E93;
+      text-decoration: underline;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    
+
+        <div id="Block-0">
+          
+          <img id="Block-0-img-0" src="img/close.png"></img>
+      
+          <div id="Block-0-ph-1">
+            Restore Purchase
+          </div>
+      
+        </div>
+  
+
+    <div id="box-container-1">
+      <div id="box-img-1">
+        
+        <div class="img-area-1">
+          <img class="imgs-1" src="img/1.png" alt="0">
+          <div id="Block-2">
+          
+            <div id="Block-2-ph-0">
+              Automatic Cloud storage & sync
+            </div>
+        
+            <div id="Block-2-ph-1">
+              Enable auto cloud sync for seamless photo syncing on multiple devices
+            </div>
+        
+          </div>
+        </div>
+    
+        <div class="img-area-1">
+          <img class="imgs-1" src="img/2.png" alt="1">
+          <div id="Block-2">
+          
+            <div id="Block-2-ph-0">
+                Unlimited number of albums
+            </div>
+        
+            <div id="Block-2-ph-1">
+                Create an unlimited number of private photo albums
+            </div>
+        
+          </div>
+        </div>
+    
+        <div class="img-area-1">
+          <img class="imgs-1" src="img/3.png" alt="2">
+          <div id="Block-2">
+          
+            <div id="Block-2-ph-0">
+              AI classification
+            </div>
+        
+            <div id="Block-2-ph-1">
+              Use AI for photo categorization to quickly organize your own photos
+            </div>
+        
+          </div>
+        </div>
+    
+      </div>
+      <div class="points-1">
+        
+      <span class="points-span-1"></span>
+    
+      <span class="points-span-1"></span>
+    
+      <span class="points-span-1"></span>
+    
+      </div>
+    </div>
+  
+  
+
+        <div id="Block-3">
+          <div class="Block-3-header">
+            <span>Extra 30G Cloud space</span>
+            <span>SAVE 58%</span>
+          </div>
+          <div class="content">
+            <div class="content-left">
+                <div class="content-left-1">Yearly test</div>
+                <div class="content-left-2">3 Day free trial</div>
+                <div class="content-left-3">50G Cloud space</div>
+            </div>
+            <div class="content-right">
+                <div class="content-right-1">$49.99/year</div>
+                <div class="content-right-2">$4.16/month</div>
+                <!-- <div class="content-left-3">50G Cloud space</div> -->
+            </div>
+          </div>
+        </div>
+  
+
+        <div id="Block-4">
+            <div class="content2">
+                <div class="content-left">
+                    <div class="content-left-1">Monthly test</div>
+                    <div class="content-left-3">20G Cloud space</div>
+                </div>
+                <div class="content-right">
+                    <div class="content-right-1">$9.99/month</div>
+                    <div class="content-right-2">$119.88/year</div>
+                </div>
+              </div>
+        </div>
+  
+
+        <div id="Block-5">
+          
+          <div id="Block-5-ph-0">
+            The subscription is automatically renewed unless turned off in your iTunes Account.To manage your subscription,please go to your iTunes Account settings.
+          </div>
+          <div id="bottom">
+            <div id="service">Terms of Use</div>
+            <div id="privicy">Privacy Policy</div>
+          </div>
+        </div>
+  
+
+        <div id="Block-6">
+          
+          <div id="Block-6-ph-0">
+            Start your 3-day free trial
+          </div>
+      
+        </div>
+  </div>
+  <script>
+    window.onload = function() {
+      
+      const $ = (str) => {
+        return document.getElementById(str)
+      }
+      let productId = 'com.project5e.pixlock.Yearly.Pro.test'
+      
+      $('Block-3').addEventListener('click', () => {
+        $('Block-4').style.opacity = '0.5'
+        $('Block-3').style.opacity = 1
+        $('Block-6-ph-0').innerHTML = 'Start your 3-day free trial'
+        productId = 'com.project5e.pixlock.Yearly.Pro.test'
+      })
+      $('Block-4').addEventListener('click', () => {
+        $('Block-3').style.opacity = '0.5'
+        $('Block-4').style.opacity = 1
+        $('Block-6-ph-0').innerHTML = 'Subscribe now'
+        productId = 'com.project5e.pixlock.Monthly.Pro.test'
+      })
+      $('Block-0-img-0').addEventListener('click', () => {
+        console.info('关闭')
+        window?.webkit?.messageHandlers?.vip_close?.postMessage?.({type: "close_web"})
+      })
+      $('Block-0-ph-1').addEventListener('click', () => {
+        console.info('恢复')
+        window?.webkit?.messageHandlers?.vip_restore?.postMessage?.({type: "restore_web"})
+      })
+      $('Block-6-ph-0').addEventListener('click', () => {
+        console.info('继续', productId)
+        window?.webkit?.messageHandlers?.vip_purchase?.postMessage?.({ type: "purchase_web", productId: productId})
+      })
+
+      $('privicy').addEventListener('click', () => {
+        console.info('隐私协议')
+        window?.webkit?.messageHandlers?.vip_privacy?.postMessage?.({ type: "privacy_web"})
+      })
+      $('service').addEventListener('click', () => {
+        console.info('用户协议')
+        window?.webkit?.messageHandlers?.vip_terms?.postMessage?.({ type: "terms_web"})
+      })
+
+      const start1 = () => {
+        const bannerImg = $('box-img-1')
+        const width = $('box-container-1').offsetWidth
+        const imgCount = bannerImg.childElementCount
+        const pointsSpanLists = document.getElementsByClassName('points-span-1')
+
+        const addTransition = () => {
+          bannerImg.style.transition = "all 0.3s"
+        }
+        const removeTransition = () => {
+            bannerImg.style.transition = "none"
+        }
+        const setTransform = (transitionX) => {
+        //   console.info(transitionX, 'transitionX')
+          bannerImg.style.transform = "translateX(" + transitionX + "px)"
+        }
+        const setOpacity = (_index) => {
+          Array.from(pointsSpanLists).forEach((element,idx) => {
+              if (idx !== _index) {
+                  pointsSpanLists[idx].style.backgroundColor = '#fff'
+
+              }
+              if (pointsSpanLists[_index]) {
+                  pointsSpanLists[_index].style.backgroundColor = '#9820C5'
+              }
+          })
+        }
+        let startX = 0 //触摸起始位置
+        let moveX = 0 //滑动时x的位置
+        let distanceX = 0 //滑动的距离
+        let isMove = false //是否滑动过
+        let index = 0
+        let moveCount = 0
+
+        bannerImg.addEventListener("touchstart", (e) => {
+          startX = e.touches[0].clientX //记录X位置
+        })
+        bannerImg.addEventListener('touchmove', (e) => {
+          moveX = e.touches[0].clientX
+          moveCount+=1
+          distanceX = moveX - startX //滑动的距离
+          if (distanceX > 0 && index <= 0) {
+              return
+          } else if (distanceX < 0 && index >= 2) {
+              return
+          }
+          removeTransition() //停止过渡
+          setTransform(-index * width + distanceX) //跟着动
+          isMove = true //正在滑动
+        })
+
+        bannerImg.addEventListener('touchend', (e) => {
+          //滑动距离要大于屏幕1/100
+          moveCount+=1
+          console.info(distanceX, '-------', index)  
+          if (isMove && Math.abs(distanceX) > width / 100) {
+            if (index <= 0 && distanceX > 0) return
+            if (index >= 3 && distanceX < 0) return
+            if (distanceX > 0) {
+                index--
+                console.log("向右滑", index);
+            } else {
+                index++
+                console.log("向左滑", index);
+            }
+          }
+          //吸附效果
+          addTransition()
+          setTransform(-index * width)
+          setOpacity(index)
+          //重置
+          startX = 0
+          moveX = 0
+          distanceX = 0
+          isMove = false
+        })
+          
+      }
+      start1()
+    }
+  </script>            
+</body>
+</html>

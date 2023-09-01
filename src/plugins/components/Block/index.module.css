@@ -1,0 +1,34 @@
+.block {
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+    /* background: #efefef; */
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.ph {
+    display: block;
+    color: #000;
+    border: 1px solid transparent;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+.img {
+    border: 1px solid transparent;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.btn {
+    /* padding: 16px; */
+    min-width: 100px;
+    border: 1px solid transparent;
+}
+
+.normal {
+    padding: 16px;
+}
