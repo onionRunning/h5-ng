@@ -35,7 +35,16 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     }
 
-    
+    #app {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #wrapper {
+      height: 100%;
+      overflow-y: auto;
+    }
 
     #Block-0 {
       background-color: #f2f2f7;
@@ -54,7 +63,7 @@
     
 
     #Block-0-img-0 {
-      margin: 10px 0px 0px 10px; 
+      margin: 10px 0px 0px 8px; 
       padding: 8px;
       width: 24px;
       height: 24px;
@@ -145,30 +154,24 @@
 
     #Block-2-ph-0 {
       word-wrap: break-word;
-      line-height: 1.5;
       font-size: 20px;
       color: #1c1c1e;
-      margin: 0px 0px 0px 0px; 
-      padding: 0px 0px 0px 0px;
       text-align: center;
       font-weight: 900;
-      
-      padding-top: 10px;
+      padding-top: 8px;
       font-family: SF Pro;
     }
       
     #Block-2-ph-1 {
       word-wrap: break-word;
-      line-height: 19px;
       font-size: 16px;
-      color: #8e8e93;
+      color: #8E8E93;
       margin: 0px 0px 0px 0px; 
       padding: 8px 8px 8px 8px;
       width: calc(100% - 32px);
       margin: 0 auto;
       text-align: left;
       font-family: SF Pro;
-
     }
       
   
@@ -184,7 +187,7 @@
       border-radius: 8px;  
       padding: 0px 0px 0px 0px;
       margin:  0 auto;
-      margin-top: 32px;
+      margin-top: 36px;
       width: calc(100vw - 32px);
     }
     
@@ -202,7 +205,7 @@
         border-radius: 8px;  
         padding: 0px 0px 0px 0px;
         margin:  0 auto;
-        margin-top: 32px;
+        margin-top: 16px;
         width: calc(100vw - 32px);
         opacity: 0.5;
     }
@@ -230,6 +233,12 @@
       width: calc(100vw - 32px);
       text-align: center;
       margin-top: 8px;
+      text-align: center;
+      font-family: SF Pro;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
     }
       
   
@@ -250,6 +259,7 @@
       position: fixed;
       bottom: 20px;
       left: 16px;
+      background: var(--bg-3, #9820C5);
     }
     
 
@@ -260,6 +270,12 @@
       color: #ffffff;
       margin: 0px 0px 0px 0px; 
       padding: 0px 0px 0px 0px;
+      color: #FFF;
+      font-family: SF Pro;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 590;
+      text-transform: capitalize;
     }
       
     .Block-3-header {
@@ -275,7 +291,12 @@
         padding-right: 8px;
         font-style: italic;
         font-family: SF Pro;
-
+        color: #FFF;
+        font-family: SF Pro;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 858;
+        line-height: normal;
     }
     .content {
         display: flex;
@@ -296,16 +317,27 @@
         font-size: 28px;
         color: #2D2D2D;
         font-weight: 900;
+        color: #2D2D2D;
+        font-family: SF Pro;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: capitalize;
+        
     }
     .content-left-2 {
+      margin:  8px 0;
+    }
+    .content-left-2-1 {
         background: #DF8BFF;
         color: #fff;
         height: 16px;
-        border-radius: 8px;
+        border-radius: 10px;
         font-size: 12px;
         margin: 4px 0;
-        padding: 4px;
-        width: 120px;
+        padding: 2px 8px;
+        /* width: 120px; */
         font-weight: 900;
     }
     .content-left-3 {
@@ -337,18 +369,20 @@
         text-align: left;
         color: #2D2D2D;
         font-family: SF Pro;
-
+        color: #2D2D2D;
+        font-family: SF Pro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
     }
     .content-right-2 {
-        font-family: SF Pro;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 14px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #929292;
-        font-family: SF Pro;
-
+      color: #929292;
+      font-family: SF Pro;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
     }
     .content2 {
         display: flex;
@@ -365,6 +399,7 @@
       justify-content: center;
       font-family: SF Pro;
       margin-bottom: 80px;
+      margin-top: 8px;
     }
     #service, #privicy {
       text-align: center;
@@ -372,139 +407,144 @@
       text-decoration: underline;
       font-size: 12px;
       margin-bottom: 6px;
+      font-family: SF Pro;
     }
   </style>
 </head>
 <body>
   <div id="app">
+    <div id="wrapper">
     
 
-        <div id="Block-0">
-          
-          <img id="Block-0-img-0" src="img/close.png"></img>
+      <div id="Block-0">
+        
+        <img id="Block-0-img-0" src="img/close.png"></img>
+    
+        <div id="Block-0-ph-1">
+          Restore Purchase
+        </div>
+    
+      </div>
+
+
+  <div id="box-container-1">
+    <div id="box-img-1">
       
-          <div id="Block-0-ph-1">
-            Restore Purchase
+      <div class="img-area-1">
+        <img class="imgs-1" src="img/1.png" alt="0">
+        <div id="Block-2">
+        
+          <div id="Block-2-ph-0">
+            Automatic Cloud storage & sync
+          </div>
+      
+          <div id="Block-2-ph-1">
+            Enable auto cloud sync for seamless photo syncing on multiple devices
           </div>
       
         </div>
+      </div>
   
-
-    <div id="box-container-1">
-      <div id="box-img-1">
+      <div class="img-area-1">
+        <img class="imgs-1" src="img/2.png" alt="1">
+        <div id="Block-2">
         
-        <div class="img-area-1">
-          <img class="imgs-1" src="img/1.png" alt="0">
-          <div id="Block-2">
-          
-            <div id="Block-2-ph-0">
-              Automatic Cloud storage & sync
-            </div>
-        
-            <div id="Block-2-ph-1">
-              Enable auto cloud sync for seamless photo syncing on multiple devices
-            </div>
-        
+          <div id="Block-2-ph-0">
+              Unlimited number of albums
           </div>
-        </div>
-    
-        <div class="img-area-1">
-          <img class="imgs-1" src="img/2.png" alt="1">
-          <div id="Block-2">
-          
-            <div id="Block-2-ph-0">
-                Unlimited number of albums
-            </div>
-        
-            <div id="Block-2-ph-1">
-                Create an unlimited number of private photo albums
-            </div>
-        
+      
+          <div id="Block-2-ph-1">
+              Create an unlimited number of private photo albums
           </div>
+      
         </div>
-    
-        <div class="img-area-1">
-          <img class="imgs-1" src="img/3.png" alt="2">
-          <div id="Block-2">
-          
-            <div id="Block-2-ph-0">
-              AI classification
-            </div>
-        
-            <div id="Block-2-ph-1">
-              Use AI for photo categorization to quickly organize your own photos
-            </div>
-        
-          </div>
-        </div>
-    
       </div>
-      <div class="points-1">
+  
+      <div class="img-area-1">
+        <img class="imgs-1" src="img/3.png" alt="2">
+        <div id="Block-2">
         
-      <span class="points-span-1"></span>
-    
-      <span class="points-span-1"></span>
-    
-      <span class="points-span-1"></span>
-    
+          <div id="Block-2-ph-0">
+            AI classification
+          </div>
+      
+          <div id="Block-2-ph-1">
+            Use AI for photo categorization to quickly organize your own photos
+          </div>
+      
+        </div>
       </div>
+  
     </div>
-  
-  
-
-        <div id="Block-3">
-          <div class="Block-3-header">
-            <span>Extra 30G Cloud space</span>
-            <span>SAVE 58%</span>
-          </div>
-          <div class="content">
-            <div class="content-left">
-                <div class="content-left-1">Yearly test</div>
-                <div class="content-left-2">3 Day free trial</div>
-                <div class="content-left-3">50G Cloud space</div>
-            </div>
-            <div class="content-right">
-                <div class="content-right-1">$49.99/year</div>
-                <div class="content-right-2">$4.16/month</div>
-                <!-- <div class="content-left-3">50G Cloud space</div> -->
-            </div>
-          </div>
-        </div>
-  
-
-        <div id="Block-4">
-            <div class="content2">
-                <div class="content-left">
-                    <div class="content-left-1">Monthly test</div>
-                    <div class="content-left-3">20G Cloud space</div>
-                </div>
-                <div class="content-right">
-                    <div class="content-right-1">$9.99/month</div>
-                    <div class="content-right-2">$119.88/year</div>
-                </div>
-              </div>
-        </div>
-  
-
-        <div id="Block-5">
-          
-          <div id="Block-5-ph-0">
-            The subscription is automatically renewed unless turned off in your iTunes Account.To manage your subscription,please go to your iTunes Account settings.
-          </div>
-          <div id="bottom">
-            <div id="service">Terms of Use</div>
-            <div id="privicy">Privacy Policy</div>
-          </div>
-        </div>
-  
-
-        <div id="Block-6">
-          
-          <div id="Block-6-ph-0">
-            Start your 3-day free trial
-          </div>
+    <div class="points-1">
       
+    <span class="points-span-1"></span>
+  
+    <span class="points-span-1"></span>
+  
+    <span class="points-span-1"></span>
+  
+    </div>
+  </div>
+
+
+
+      <div id="Block-3">
+        <div class="Block-3-header">
+          <span>Extra 30G Cloud space</span>
+          <span>SAVE 58%</span>
         </div>
+        <div class="content">
+          <div class="content-left">
+              <div class="content-left-1">Yearly</div>
+              <div class="content-left-2">
+                <span class="content-left-2-1">3 Day free trial</span>
+              </div>
+              <div class="content-left-3">50G Cloud space</div>
+          </div>
+          <div class="content-right">
+              <div class="content-right-1">$49.99/year</div>
+              <div class="content-right-2">$4.16/month</div>
+              <!-- <div class="content-left-3">50G Cloud space</div> -->
+          </div>
+        </div>
+      </div>
+
+
+      <div id="Block-4">
+          <div class="content2">
+              <div class="content-left">
+                  <div class="content-left-1">Monthly test</div>
+                  <div class="content-left-3">20G Cloud space</div>
+              </div>
+              <div class="content-right">
+                  <div class="content-right-1">$9.99/month</div>
+                  <div class="content-right-2">$119.88/year</div>
+              </div>
+            </div>
+      </div>
+
+
+      <div id="Block-5">
+        
+        <div id="Block-5-ph-0">
+          The subscription is automatically renewed unless turned off in your iTunes Account.To manage your subscription,please go to your iTunes Account settings.
+        </div>
+        <div id="bottom">
+          <div id="service">Terms of Use</div>
+          <div id="privicy">Privacy Policy</div>
+        </div>
+      </div>
+
+
+      <div id="Block-6">
+        
+        <div id="Block-6-ph-0">
+          Start your 3-day free trial
+        </div>
+    
+      </div>
+</div>
   </div>
   <script>
     window.onload = function() {
@@ -512,41 +552,51 @@
       const $ = (str) => {
         return document.getElementById(str)
       }
-      let productId = 'com.project5e.pixlock.Yearly.Pro.test'
+      let productId = 'year'
       
       $('Block-3').addEventListener('click', () => {
         $('Block-4').style.opacity = '0.5'
         $('Block-3').style.opacity = 1
         $('Block-6-ph-0').innerHTML = 'Start your 3-day free trial'
-        productId = 'com.project5e.pixlock.Yearly.Pro.test'
+        productId = 'year'
       })
       $('Block-4').addEventListener('click', () => {
         $('Block-3').style.opacity = '0.5'
         $('Block-4').style.opacity = 1
         $('Block-6-ph-0').innerHTML = 'Subscribe now'
-        productId = 'com.project5e.pixlock.Monthly.Pro.test'
+        productId = 'month'
       })
       $('Block-0-img-0').addEventListener('click', () => {
         console.info('关闭')
-        window?.webkit?.messageHandlers?.vip_close?.postMessage?.({type: "close_web"})
+        sendMessageToIos('', {method: 'close'})
+        // window?.webkit?.messageHandlers?.vip_close?.postMessage?.({type: "close_web"})
       })
       $('Block-0-ph-1').addEventListener('click', () => {
         console.info('恢复')
-        window?.webkit?.messageHandlers?.vip_restore?.postMessage?.({type: "restore_web"})
+        sendMessageToIos('', {method: 'restore_web'})
+        // window?.webkit?.messageHandlers?.vip_restore?.postMessage?.({type: "restore_web"})
       })
       $('Block-6-ph-0').addEventListener('click', () => {
         console.info('继续', productId)
-        window?.webkit?.messageHandlers?.vip_purchase?.postMessage?.({ type: "purchase_web", productId: productId})
+        sendMessageToIos('', {method: 'purchase_web', productId})
+        // window?.webkit?.messageHandlers?.vip_purchase?.postMessage?.({ type: "purchase_web", productId: productId})
       })
 
       $('privicy').addEventListener('click', () => {
         console.info('隐私协议')
-        window?.webkit?.messageHandlers?.vip_privacy?.postMessage?.({ type: "privacy_web"})
+        sendMessageToIos('', {method: 'privacy'})
+        // window?.webkit?.messageHandlers?.vip_privacy?.postMessage?.({ type: "privacy_web"})
       })
       $('service').addEventListener('click', () => {
         console.info('用户协议')
-        window?.webkit?.messageHandlers?.vip_terms?.postMessage?.({ type: "terms_web"})
+        sendMessageToIos('', {method: 'terms'})
+        // window?.webkit?.messageHandlers?.vip_terms?.postMessage?.({ type: "terms_web"})
       })
+
+      function sendMessageToIos(method, params) {
+        console.info(method, params, '---ooo')
+        window.webkit.messageHandlers.bridge.postMessage(JSON.stringify(params))
+      }
 
       const start1 = () => {
         const bannerImg = $('box-img-1')
